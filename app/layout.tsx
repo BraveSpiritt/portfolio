@@ -7,25 +7,10 @@ import { Analytics } from "./components/analytics";
 export const metadata: Metadata = {
 	title: {
 		default: "BraveSpirit",
-		template: "%s | chronark.com",
+		template: "SB club",
 	},
-	description: "Software engineer at upstash.com and founder of planetfall.io",
-	openGraph: {
-		title: "chronark.com",
-		description:
-			"Software engineer at upstash.com and founder of planetfall.io",
-		url: "https://chronark.com",
-		siteName: "chronark.com",
-		images: [
-			{
-				url: "https://chronark.com/og.png",
-				width: 1920,
-				height: 1080,
-			},
-		],
-		locale: "en-US",
-		type: "website",
-	},
+	description: "Software engineer at maratuk holding",
+
 	robots: {
 		index: true,
 		follow: true,
