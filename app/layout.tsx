@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 		},
 	},
 	twitter: {
-		title: "Chronark",
+		title: "Brave Spirit",
 		card: "summary_large_image",
 	},
 	icons: {
