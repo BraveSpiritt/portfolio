@@ -8,6 +8,7 @@ import { Eye } from "lucide-react";
 const allProjects = [
   { title: "Test work", href: "https://testwork77.netlify.app/" },
   { title: "News application", href: "https://sadikbadik.netlify.app/" },
+  { title: "GTA VI order", href: "https://gta-vi-gules.vercel.app//" },
 ];
 
 export default function ProjectsPage() {
@@ -73,9 +74,7 @@ export default function ProjectsPage() {
 
           <div className="flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
             {allProjects.map((project) => (
-              <Link
-                href={`${project.href}`}
-                target="_blank">
+              <Link href={`${project.href}`} target="_blank">
                 <Card key={project.title}>
                   <Article project={project} />
                 </Card>
