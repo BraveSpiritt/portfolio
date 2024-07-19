@@ -10,12 +10,17 @@ const allProjects = [
   { title: "News application", href: "https://sadikbadik.netlify.app/" },
   { title: "GTA VI order", href: "https://gta-vi-gules.vercel.app//" },
 ];
+const childProject = [
+  { slug: "Calendar", title: "Calendar", href: "https://sadikcalendarbadik.netlify.app" },
+  { slug: "Weather application", title: "Weather application", href: "https://sadikweatherbadik.netlify.app" },
+  { slug: "Ashstone Test Work", title: "Test Work (Ashstone)", href: "https://ashstone-test-work.vercel.app/" }
+];
 
 export default function ProjectsPage() {
   const featured = allProjects;
   const top2 = allProjects;
   const top3 = allProjects;
-  const sorted = allProjects;
+  // const sorted = allProjects;
   // .filter((p) => p.published)
   // .filter(
   //   (project) =>
@@ -84,35 +89,35 @@ export default function ProjectsPage() {
         </div>
         <div className="hidden w-full h-px md:block bg-zinc-800" />
 
-        {/* <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
           <div className="grid grid-cols-1 gap-4">
-            {sorted
+            {childProject
               .filter((_, i) => i % 3 === 0)
               .map((project) => (
-                // <Card key={project.slug}>
+                <Card key={project.slug}>
                   <Article project={project} />
-                // </Card>
+                </Card>
               ))}
           </div>
           <div className="grid grid-cols-1 gap-4">
-            {sorted
+            {childProject
               .filter((_, i) => i % 3 === 1)
               .map((project) => (
-                // <Card key={project.slug}>
+                <Card key={project.slug}>
                   <Article project={project} />
-                // </Card>
+                </Card>
               ))}
           </div>
           <div className="grid grid-cols-1 gap-4">
-            {sorted
+            {childProject
               .filter((_, i) => i % 3 === 2)
               .map((project) => (
-                // <Card key={project.slug}>
+                <Card key={project.slug}>
                   <Article project={project} />
-                // </Card>
+                </Card>
               ))}
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );
